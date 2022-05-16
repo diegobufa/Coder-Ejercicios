@@ -1,4 +1,4 @@
-let generoUsuario = prompt("Necesito saber para poder calcular tu IMC si eres Hombre o Mujer?");
+let generoUsuario = prompt("Necesito saber para poder calcular tu IMC si eres Hombre o Mujer?").toLowerCase();
 let alturaEnCentimetros= parseInt(prompt("Cual es tu altura en cm?"));
 let alturaEnMetros = alturaEnCentimetros / 100;
 let pesoFinal = parseInt(prompt("Cual es tu peso en kg?"));  
@@ -25,7 +25,7 @@ function vidaObesidad (calculoDeVida, obesidad1){
 
 switch (generoUsuario){
 
-    case "Hombre":
+    case "hombre":
 
         if ( pesoFinal !=="" && alturaEnMetros !==""){
            
@@ -67,7 +67,7 @@ switch (generoUsuario){
         
         break;
     
-    case "Mujer":
+    case "mujer":
         if ( pesoFinal !=="" && alturaEnMetros !==""){
             let calcularImc = Math.round (pesoFinal / (alturaEnMetros **2));
              
